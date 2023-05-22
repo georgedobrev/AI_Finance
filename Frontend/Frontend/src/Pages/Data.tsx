@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import { DataRow } from "../components/DataRow";
 
@@ -27,7 +28,7 @@ export const Data = () => {
   console.log(data);
 
   return (
-    <div style={{ background: '#293142', minHeight: '80vh' }}>
+    <div style={{ background: '#293142', minHeight: '100vh' }}>
       <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '40px' }}>
         <div style={{ width: '600px', background: '#1e242c', padding: '40px', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)' }}>
           <h1 style={{ textAlign: 'center', marginBottom: '20px', color: '#61dafb', letterSpacing: '2px', textTransform: 'uppercase' }}>Data</h1>
