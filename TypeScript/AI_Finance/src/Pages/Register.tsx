@@ -2,18 +2,18 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-// import './Register.css';
+
+
 
 export const Register = () => {
   const schema = yup.object().shape({
     user: yup.string().required(),
     email: yup.string().email().required(),
-    age: yup.number().positive().integer().required(),
     password: yup.string().required(),
     confirmPassword: yup.string().oneOf([yup.ref("password")]).required()
   });
 
-  const { register, handleSubmit, formState: { errors } } = useForm({
+  const { register, handleSubmit } = useForm({
     resolver: yupResolver(schema)
   });
 
@@ -24,15 +24,12 @@ export const Register = () => {
   return (
     <div className="register-container">
       <form onSubmit={handleSubmit(onSubmit)} className="register-form">
-        <h2 className="register-title">Registration Form</h2>
+        <h2 className="register-title">Sign up</h2>
         <div className="register-input-container">
           <input type="text" placeholder="User" {...register("user")} className="register-input" />
         </div>
         <div className="register-input-container">
           <input type="text" placeholder="Email" {...register("email")} className="register-input" />
-        </div>
-        <div className="register-input-container">
-          <input type="number" placeholder="Age" {...register("age")} className="register-input" />
         </div>
         <div className="register-input-container">
           <input type="password" placeholder="Password" {...register("password")} className="register-input" />

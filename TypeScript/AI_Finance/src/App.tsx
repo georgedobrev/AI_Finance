@@ -4,6 +4,7 @@ import { Profile } from './Pages/Profile';
 import { Data } from './Pages/Data';
 import { Header } from './components/Header';
 import { Register } from './Pages/Register';
+import { Login } from './Pages/Login';
 
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
         <Route path='/profile' element={<Profile />} />
         <Route path='/data' element={<Data />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
       </Route>
     )
   );
@@ -28,10 +30,11 @@ function App() {
 
 const Root = () => {
   const location = useLocation();
+  const hideNavbar = location.pathname === '/register' || location.pathname === '/login';
 
   return (
     <>
-      {location.pathname !== '/register' && <Header />}
+      {!hideNavbar && <Header />}
       <div>
         <Outlet />
       </div>

@@ -15,7 +15,7 @@ export const Data = () => {
     fetchData();
   }, []);
 
-  const createRow = (item:any, index:any) => {
+  const createRow = (item: any, index: any) => {
     return (
       <DataRow
         key={index}
@@ -28,13 +28,21 @@ export const Data = () => {
   console.log(data);
 
   return (
-    <div style={{ background: '#293142', minHeight: '100vh' }}>
-      <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '40px' }}>
-        <div style={{ width: '600px', background: '#1e242c', padding: '40px', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)' }}>
-          <h1 style={{ textAlign: 'center', marginBottom: '20px', color: '#61dafb', letterSpacing: '2px', textTransform: 'uppercase' }}>Data</h1>
+    <div className="container">
+      <div className="content">
+        <div className="card">
+          <h1 className="title">Data</h1>
           {data.map(createRow)}
         </div>
       </div>
+      <div className="info">
+        <h4>Lorem Ipsum</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quos, sint dolores incidunt obcaecati, mollitia velit ipsam provident, animi veniam totam deleniti itaque ducimus magni corporis quis! Corporis, amet ullam.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto molestiae a maiores eum ipsam repudiandae recusandae cupiditate optio molestias voluptas deserunt adipisci, quos dolor error ducimus atque, provident similique doloremque.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, omnis voluptatibus nihil voluptates perferendis repudiandae labore porro veniam soluta delectus, eos ipsam. Rerum odio ad distinctio temporibus commodi debitis quasi!
+        </p>
+      </div>
     </div>
-  );
+  );  
 };
