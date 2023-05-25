@@ -1,0 +1,16 @@
+.data-row {
+    background-color: #293142;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .data-row__symbol {
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .data-row__price {
+    color: #ff9800;
+    margin: 0;
+  }
