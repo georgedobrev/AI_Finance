@@ -2,8 +2,10 @@
   background-color: white;
   font-family: sans-serif;
 
-  --lightBlue : #61dafb;
-  --headerBlue : #101724;
+  --lightBlue: #61dafb;
+  --headerBlue: #101724;
+  --cardBackground: rgba(30, 36, 44, 0.6);
+  --boxShadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 body{

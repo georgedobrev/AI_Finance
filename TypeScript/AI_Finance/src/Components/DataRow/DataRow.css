@@ -1,0 +1,28 @@
+.data-row {
+  background-color: #293142;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.data-row__symbol {
+  color: var(--lightBlue);
+  margin: 0;
+}
+
+.data-row__price {
+  color: white;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for screens with a maximum width of 768px */
+  .data-row {
+    padding: 10px; /* Adjust the padding as per your needs */
+  }
+  
+  .data-row__symbol,
+  .data-row__price {
+    font-size: 14px; /* Adjust the font size as per your needs */
+  }
+}

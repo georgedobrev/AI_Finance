@@ -1,6 +1,7 @@
 import { createBrowserRouter, createRoutesFromElements, Route, Outlet, RouterProvider, useLocation } from 'react-router-dom';
 import { Header } from './Components/Header/Header';
 import { Home } from './Pages/Home/Home';
+import { Data } from './Pages/Data/Data';
 
 import './App.css';
 
@@ -9,6 +10,7 @@ function App() {
     createRoutesFromElements(
       <Route path='/' element={<Root />} >
         <Route index element={<Home />} />
+        <Route path='/data' element={<Data />} />
       </Route>
     )
   );

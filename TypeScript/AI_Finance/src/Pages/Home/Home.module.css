@@ -14,7 +14,7 @@
   position: relative;
   width: 90%;
   max-width: 400px;
-  background: rgba(30, 36, 44, 0.6);
+  background: var(--cardBackground);
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);

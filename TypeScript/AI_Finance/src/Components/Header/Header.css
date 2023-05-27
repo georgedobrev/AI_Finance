@@ -1,6 +1,7 @@
 .header {
   background-color: var(--headerBlue);
   padding: 16px;
+  padding-bottom: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,6 +39,8 @@
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 16px;
+    padding-top: 0px;
   }
   
   .header-logo {
